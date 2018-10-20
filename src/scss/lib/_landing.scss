@@ -1,0 +1,84 @@
+#landing {
+  background-color: $blue;
+  text-align: center;
+  position: relative;
+  
+  .landing-main-wrapper {
+    padding: 80px;
+    display: inline-block;
+    
+    .title {
+      color: $background;
+      font-size: calc(2em + 3vmin);
+      line-height: 1.1em;
+      font-family: 'TelefonicaWebLight';
+      margin-bottom: 2.7rem;
+    }
+    
+    .prize {
+      position: absolute;
+      padding: 30px;
+      background-color: $orange;
+      color: white;
+      width: 100px;
+      height: 100px;
+      vertical-align: bottom;
+      border-radius: 50%;
+      font-size: 1.9em;
+      font-weight: 700;
+      line-height: 1.1em;
+      bottom: 30%;
+      right: 10vw;
+      
+      p {
+        margin-top: 5px;
+      }
+    }
+  }
+  
+  .landing-secondary {
+    padding: 40px 100px;
+
+    font-size: 1.5em;
+    line-height: 1.3em;
+    color: $color;
+    background-color: $background;
+
+  }
+}
+
+@media (max-width: 1200px) {
+  .prize {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .title {
+    font-size: 1.8em !important;
+  }
+}
+
+// <header id="landing">
+// <div class="landing-main-wrapper">
+//   <h1 class="title">¡Cámbiate a un plan con más gigas!</h1>
+//   <form action="">
+//     <fieldset>
+//       <input type="number" name="" id="" placeholder="Ingresa tu numero">
+//       <button>Cambiarme ya</button>
+//     </fieldset>
+//     <fieldset>
+//       <input type="checkbox" name="" id="terms">
+//       <label for="terms"> Acepto <u>terminos y condiciones</u> y autorizo el tratamiento de datos personales</label>
+//     </fieldset>
+//   </form>
+//   <div class="prize">
+//     Nuevo Plan
+//   </div>
+
+// </div>
+// <div class="landing-secondary">
+//   Nuevo plan con muchas más Gigas en 4G/3G, minutos ilimitados a todo
+//   operador, video, música y servicios que hacen más fácil tu vida.
+// </div>
+// </header>

@@ -1,0 +1,219 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+@font-face {
+  font-family: 'TelefonicaWebExtraLight';
+  src: url("fonts/TelefonicaWebExtraLight.eot");
+  src: url("fonts/TelefonicaWebExtraLight.eot") format("embedded-opentype"), url("fonts/TelefonicaWebExtraLight.woff2") format("woff2"), url("fonts/TelefonicaWebExtraLight.woff") format("woff"), url("fonts/TelefonicaWebExtraLight.ttf") format("truetype"), url("fonts/TelefonicaWebExtraLight.svg#TelefonicaWebExtraLight") format("svg"); }
+
+@font-face {
+  font-family: 'dotmovistarfont';
+  src: url("fonts/dotmovistarfont.eot");
+  src: url("fonts/dotmovistarfont.eot") format("embedded-opentype"), url("fonts/dotmovistarfont.woff2") format("woff2"), url("fonts/dotmovistarfont.woff") format("woff"), url("fonts/dotmovistarfont.ttf") format("truetype"), url("fonts/dotmovistarfont.svg#dotmovistarfont") format("svg"); }
+
+@font-face {
+  font-family: 'TelefonicaWebLight';
+  src: url("fonts/TelefonicaWebLight.eot");
+  src: url("fonts/TelefonicaWebLight.eot") format("embedded-opentype"), url("fonts/TelefonicaWebLight.woff2") format("woff2"), url("fonts/TelefonicaWebLight.woff") format("woff"), url("fonts/TelefonicaWebLight.ttf") format("truetype"), url("fonts/TelefonicaWebLight.svg#TelefonicaWebLight") format("svg"); }
+
+@font-face {
+  font-family: 'TelefonicaWebRegular';
+  src: url("fonts/TelefonicaWebRegular.eot");
+  src: url("fonts/TelefonicaWebRegular.eot") format("embedded-opentype"), url("fonts/TelefonicaWebRegular.woff2") format("woff2"), url("fonts/TelefonicaWebRegular.woff") format("woff"), url("fonts/TelefonicaWebRegular.ttf") format("truetype"), url("fonts/TelefonicaWebRegular.svg#TelefonicaWebRegular") format("svg"); }
+
+#bar {
+  width: 100%;
+  background-color: #ffffff;
+  height: 125px;
+  overflow: hidden; }
+  #bar .nav-item {
+    display: inline-block;
+    font-family: 'TelefonicaWebRegular';
+    font-weight: 700;
+    font-size: 0.7em;
+    height: 120px;
+    line-height: 1.5em;
+    vertical-align: middle;
+    max-width: 180px;
+    text-align: center;
+    padding: 30px; }
+    #bar .nav-item a:after {
+      content: '\2304';
+      font-size: 1.4em;
+      padding: 5px;
+      font-family: arial; }
+  #bar .nav-container {
+    text-align: left; }
+    #bar .nav-container .logo {
+      overflow: hidden;
+      width: 300px;
+      height: 120px;
+      display: inline-block; }
+      #bar .nav-container .logo img {
+        width: 120%;
+        margin-top: -20%;
+        margin-left: -10%; }
+    #bar .nav-container .right {
+      text-align: right; }
+    #bar .nav-container .chat {
+      margin-left: 50px;
+      padding: 0; }
+      #bar .nav-container .chat:before {
+        font-family: 'dotmovistarfont';
+        content: 'H';
+        font-size: 1.2em;
+        padding: 10px; }
+    #bar .nav-container .eye {
+      padding: 0; }
+      #bar .nav-container .eye:before {
+        font-family: 'dotmovistarfont';
+        font-size: 1.2em;
+        padding: 10px;
+        content: 'I'; }
+    #bar .nav-container .my-movistar {
+      margin-left: 0px; }
+      #bar .nav-container .my-movistar button {
+        background-color: #1caadf;
+        margin-top: -10px;
+        padding: 12px 12px;
+        border: none;
+        font-size: 1em;
+        border-radius: 4px;
+        color: #ffffff;
+        font-weight: 900; }
+
+#landing {
+  background-color: #1caadf;
+  text-align: center;
+  position: relative; }
+  #landing .landing-main-wrapper {
+    padding: 80px;
+    display: inline-block; }
+    #landing .landing-main-wrapper .title {
+      color: #ffffff;
+      font-size: calc(2em + 3vmin);
+      line-height: 1.1em;
+      font-family: 'TelefonicaWebLight';
+      margin-bottom: 2.7rem; }
+    #landing .landing-main-wrapper .prize {
+      position: absolute;
+      padding: 30px;
+      background-color: #f59c00;
+      color: white;
+      width: 100px;
+      height: 100px;
+      vertical-align: bottom;
+      border-radius: 50%;
+      font-size: 1.9em;
+      font-weight: 700;
+      line-height: 1.1em;
+      bottom: 30%;
+      right: 10vw; }
+      #landing .landing-main-wrapper .prize p {
+        margin-top: 5px; }
+  #landing .landing-secondary {
+    padding: 40px 100px;
+    font-size: 1.5em;
+    line-height: 1.3em;
+    color: #50535a;
+    background-color: #ffffff; }
+
+@media (max-width: 1200px) {
+  .prize {
+    display: none; } }
+
+@media (max-width: 600px) {
+  .title {
+    font-size: 1.8em !important; } }
+
+body {
+  background-color: #ffffff;
+  font-size: 1.3em;
+  line-height: 1.35em;
+  color: #50535a;
+  font-family: 'TelefonicaWebRegular', Arial, Helvetica, sans-serif; }
+
+ul li {
+  display: inline-block; }
+  ul li a {
+    text-decoration: none;
+    color: #50535a; }
+
+form fieldset input[type=number] {
+  border: none;
+  height: 45px;
+  width: 300px;
+  padding: 0 0 0 20px;
+  font-size: 1.1em;
+  font-family: 'TelefonicaWebLight';
+  margin: 0; }
+
+form fieldset button {
+  font-family: 'TelefonicaWebRegular';
+  font-size: 1.1em;
+  border: none;
+  height: 45px;
+  width: 200px;
+  padding: 0;
+  margin-left: -5px;
+  background-color: #5bc500;
+  color: #ffffff; }
+
+form fieldset input[type=checkbox] {
+  font-family: 'TelefonicaWebRegular';
+  font-size: 1.1em;
+  border: none;
+  padding: 0;
+  margin-left: -5px;
+  background-color: #5bc500;
+  color: #ffffff; }
+
+form fieldset label[for=terms] {
+  font-size: 0.7em;
+  color: white; }
+
