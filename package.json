@@ -1,0 +1,27 @@
+{
+  "name": "scaffolding",
+  "version": "1.0.0",
+  "description": "scaffolding for proofs",
+  "main": "index.js",
+  "dependencies": {
+    "purecss": "^1.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hi-neron/scaffold.git"
+  },
+  "keywords": [
+    "scaffold",
+    "proofs"
+  ],
+  "author": "jj",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hi-neron/scaffold/issues"
+  },
+  "homepage": "https://github.com/hi-neron/scaffold#readme"
+}

@@ -4,7 +4,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 
 module.exports = {
-  entry: { main: "./src/app.js" }, // string | object | array
+  entry: { main: "src/app.js" }, // string | object | array
   // Here the application starts executing
   // and webpack starts bundling
   output: {

@@ -1,7 +1,7 @@
 {
   "name": "node10dev",
   "version": "1.0.0",
-  "description": "node10 backbone",
+  "description": "scaffold to proofs",
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --mode development --open",

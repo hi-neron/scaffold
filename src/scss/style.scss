@@ -1,78 +1,8 @@
 // set
-@import './lib/reset';
+@import './lib/normalize'; // Normalize pure
 @import './lib/colors';
 @import './lib/fonts';
 
-// page
-@import './lib/nav';
-@import './lib/landing';
-@import './lib/bottom';
-@import './lib/footer';
-
 body {
   background-color: $background;
-  font-size: 1.3em;
-  line-height: 1.35em;
-  color: $color;
-  font-family: 'TelefonicaWebRegular', Arial, Helvetica, sans-serif;
 }
-
-ul {
-  li {
-    display: inline-block;
-    a {
-      text-decoration: none;
-      color: $color;
-    }
-  }
-}
-
-form {
-  fieldset {
-    input[type=number] {
-      border: none;
-      height: 45px;
-      width: 300px;
-      padding: 0 0 0 20px;
-      font-size: 1.1em;
-      font-family: 'TelefonicaWebLight';
-      margin: 0;
-    }
-    button {
-      font-family: 'TelefonicaWebRegular';
-      font-size: 1.1em;
-      border: none;
-      height: 45px;
-      width: 200px;
-      padding: 0;
-      margin-left: -5px;
-      background-color: $green;
-      color: $background;
-    }
-    input[type=checkbox] {
-      font-family: 'TelefonicaWebRegular';
-      font-size: 1.1em;
-      border: none;
-      padding: 0;
-      margin-left: -5px;
-      background-color: $green;
-      color: $background;
-    }
-    label[for=terms] {
-      font-size: 0.7em;
-      color: white;
-    }
-
-  }
-}
-
-// <form action="">
-// <fieldset>
-//   <input type="number" name="" id="" placeholder="Ingresa tu numero">
-//   <button>Cambiarme ya</button>
-// </fieldset>
-// <fieldset>
-//   <input type="checkbox" name="" id="terms">
-//   <label for="terms"> Acepto <u>terminos y condiciones</u> y autorizo el tratamiento de datos personales</label>
-// </fieldset>
-// </form>
