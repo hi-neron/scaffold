@@ -1,6 +1,21 @@
-$blue : #1caadf;
-$orange : #f59c00;
-$green : #5bc500;
-$gray : #86888c;
-$color : #50535a;
-$background : #ffffff;
+// Color scheme
+$color1: #f8f991;
+$color2: #9ab87a;
+$color3: #708b75;
+$color4: #444b6e;
+$color5: #3d315b;
+
+// Color pieces
+$background:  rgba($color1, 1);
+$text:  $color4;
+
+
+@mixin background-grad {
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffeaef+0,edf9f8+85 */
+background: #ffeaef; /* Old browsers */
+background: -moz-linear-gradient(45deg, #ffeaef 0%, #edf9f8 85%); /* FF3.6-15 */
+background: -webkit-linear-gradient(45deg, #ffeaef 0%,#edf9f8 85%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(45deg, #ffeaef 0%,#edf9f8 85%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffeaef', endColorstr='#edf9f8',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+

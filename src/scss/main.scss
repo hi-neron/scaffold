@@ -1,0 +1,90 @@
+// pure
+@import '~/../node_modules/purecss/build/base.css'; // grid base
+@import '~/../node_modules/purecss/build/grids.css'; // grid base
+
+// @import '~/../node_modules/purecss/build/forms.css';  // formularios
+// @import '~/../node_modules/purecss/build/buttons.css'; // botones
+// @import '~/../node_modules/purecss/build/menus.css'; // botones
+// @import '~/../node_modules/purecss/build/tables.css'; // botones
+// @import '~/../node_modules/purecss/build/grids-responsive.css'; // grid base responsive
+
+// set./
+@import './lib/colors';
+@import './lib/fonts';
+
+
+body {
+}
+
+h1 {
+  margin: 0;
+}
+
+#app {
+  width: 100%;
+  position: relative;
+  background-color: $background;
+  color: $text;
+  font-family: 'Arbutus Slab';
+  font-size: 100%;
+
+  .wrapper {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    header {
+      text-align: center;
+      font-size: 90%;
+  
+      h1 {
+        font-family: 'Arvo', serif;
+        font-size: 22vmin;
+        color: $color4;
+        padding: 0;
+        margin: 0;
+      }
+
+      p {
+        margin-top: 0;
+        color: $color4;
+        padding-bottom: 0.4em;
+        font-size: 1.8em;
+      }
+      
+      h2 {
+        padding: 0;
+        margin: 0;
+        font-size: 3vmin;
+        font-family: 'Arbutus Slab';
+        color: $color4;
+      }
+    }
+
+    footer {
+      .footer-wrapper {
+        margin-bottom: -10em;
+        padding-top: 10em;
+        font-size: 0.8em;
+        line-height: 2em;
+        text-align: center;
+        font-family: 'Arbutus Slab';
+        a {
+          padding: 4px 5px;
+          border-radius: 1px;
+          text-decoration: none;
+          font-family: 'arvo';
+          background-color: $color4;
+          color: $color1;
+          
+          &:hover {
+            color: $color5;
+            background-color: $color2;
+          }
+
+        }
+      }
+    }
+  }
+}

@@ -4,11 +4,30 @@
   "description": "scaffolding for proofs",
   "main": "index.js",
   "dependencies": {
+    "postcss-loader": "^3.0.0",
     "purecss": "^1.0.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "@babel/core": "^7.1.2",
+    "autoprefixer": "^9.2.1",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.0.4",
+    "babel-preset-env": "^1.7.0",
+    "browser-sync": "^2.26.3",
+    "css-loader": "^1.0.0",
+    "file-loader": "^2.0.0",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.2.0",
+    "mini-css-extract-plugin": "^0.4.4",
+    "node-sass": "^4.9.4",
+    "sass-loader": "^7.1.0",
+    "webpack": "^4.21.0",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.9"
+  },
   "scripts": {
-    "test": "test"
+    "start": "webpack-dev-server --mode development --open",
+    "dev": "webpack --mode development"
   },
   "repository": {
     "type": "git",
