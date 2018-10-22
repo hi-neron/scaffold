@@ -1,12 +1,15 @@
 // pure
 @import '~/../node_modules/purecss/build/base.css'; // grid base
 @import '~/../node_modules/purecss/build/grids.css'; // grid base
-
 // @import '~/../node_modules/purecss/build/forms.css';  // formularios
 // @import '~/../node_modules/purecss/build/buttons.css'; // botones
 // @import '~/../node_modules/purecss/build/menus.css'; // botones
 // @import '~/../node_modules/purecss/build/tables.css'; // botones
 // @import '~/../node_modules/purecss/build/grids-responsive.css'; // grid base responsive
+
+// Fontello
+@import './lib/_fontello.css'; // grid base
+@import './lib/_fontello-codes.css'; // grid base
 
 // set./
 @import './lib/colors';
@@ -14,6 +17,7 @@
 
 
 body {
+  margin: 0;
 }
 
 h1 {
@@ -63,6 +67,9 @@ h1 {
     }
 
     footer {
+      p {
+        margin: 0;
+      }
       .footer-wrapper {
         margin-bottom: -10em;
         padding-top: 10em;
@@ -70,7 +77,7 @@ h1 {
         line-height: 2em;
         text-align: center;
         font-family: 'Arbutus Slab';
-        a {
+        .run {
           padding: 4px 5px;
           border-radius: 1px;
           text-decoration: none;
@@ -83,6 +90,19 @@ h1 {
             background-color: $color2;
           }
 
+        }
+
+        .social {
+          margin-top: 1em;
+          font-size: 1em;
+
+          a {
+            text-decoration: none;
+            color: $color4;
+            &:hover {
+              color: $color3;
+            }
+          }
         }
       }
     }

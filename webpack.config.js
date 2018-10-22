@@ -41,6 +41,30 @@ module.exports = {
         ]
       },
       {
+        test: /\.svg$/,
+        use: [
+          {
+            loader: "file-loader",
+            options: {
+              name: 'img/[name].[ext]'
+            }
+          }
+        ]
+      },
+      {
+        test: /\.(ttf|otf|eot|woff|woff2|)$/,
+        use: [
+          {
+            loader: "file-loader",
+            options: {
+              name: 'fonts/[name].[ext]',
+              mimetype: 'application/font-woff',
+              publicPath: '../'
+            }
+          }
+        ]
+      },
+      {
         test: /\.(png|jpe?g)$/i,
         use: [
           {
