@@ -18,6 +18,7 @@
 
 body {
   margin: 0;
+  background-color: $background;
 }
 
 h1 {
@@ -27,7 +28,6 @@ h1 {
 #app {
   width: 100%;
   position: relative;
-  background-color: $background;
   color: $text;
   font-family: 'Arbutus Slab';
   font-size: 100%;
@@ -46,19 +46,26 @@ h1 {
       .header-container {
         position: relative;
 
-        .cat {
-          $dimensions: 20vmin;
+        $dimensions: 7vmin;
+        .catParts {
+          left: calc(50% + 2vmin);
+          bottom: 4vmin;
           position: absolute;
           width: $dimensions;
-          left: 50%;
-          bottom: 3vmin;
-          margin-bottom: -1.7vmin;
-          margin-left: (($dimensions / 2) * -1);
-          z-index: 0;
-
-          img {
-            width: 100%;
-          }
+        }
+        
+        .cat1 {
+          z-index: -1;
+          margin-bottom: 0.9vmin;
+          margin-left: ((($dimensions / 2) * -1) - 6vmin);
+        }
+        
+        .cat2 {
+          margin-left: ((($dimensions / 2) * -1) - 0.5vmin);          
+        }
+        
+        img {
+          width: 100%;
         }
 
         h1 {
