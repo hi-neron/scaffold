@@ -41,15 +41,36 @@ h1 {
     header {
       text-align: center;
       font-size: 90%;
-  
-      h1 {
-        font-family: 'Arvo', serif;
-        font-size: 22vmin;
-        color: $color4;
-        padding: 0;
-        margin: 0;
-      }
+      
+      
+      .header-container {
+        position: relative;
 
+        .cat {
+          $dimensions: 20vmin;
+          position: absolute;
+          width: $dimensions;
+          left: 50%;
+          bottom: 3vmin;
+          margin-bottom: -1.7vmin;
+          margin-left: (($dimensions / 2) * -1);
+          z-index: 0;
+
+          img {
+            width: 100%;
+          }
+        }
+
+        h1 {
+          z-index: 1;
+          font-family: 'Arvo', serif;
+          font-size: 22vmin;
+          color: $color4;
+          padding: 0;
+          margin: 0;
+        }
+        
+      }
       p {
         margin-top: 0;
         color: $color4;
@@ -63,6 +84,7 @@ h1 {
         font-size: 3vmin;
         font-family: 'Arbutus Slab';
         color: $color4;
+        line-height: 1.4em;
       }
     }
 
@@ -93,12 +115,14 @@ h1 {
         }
 
         .social {
-          margin-top: 1em;
+          margin-top: 2em;
           font-size: 1em;
 
           a {
             text-decoration: none;
             color: $color4;
+            font-size: 1.3em;
+            padding: 4px;
             &:hover {
               color: $color3;
             }
