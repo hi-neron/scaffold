@@ -29,7 +29,7 @@ h1 {
   width: 100%;
   position: relative;
   color: $text;
-  font-family: 'Arbutus Slab';
+  font-family: 'Josefin Sans';
   font-size: 100%;
 
   .wrapper {
@@ -95,17 +95,49 @@ h1 {
       }
     }
 
+    main {
+      .webpack-on {
+        display: flex;
+        height: 10em;
+        justify-content: center;
+        align-items: center;
+
+        .webpack-item {
+          text-align: center;
+          padding: 4px 5px;
+          border-radius: 2px;
+          margin: 5px;
+          
+          &:before {
+            content: '';
+            border-left: 1px solid $color4;
+            width: 2px;
+            display: block;
+          }
+
+          i {
+            font-size: 0.6em;
+            color: $color2;
+          }
+          p {
+            margin: 0;
+            padding: 0;
+            font-size: 1.6vmin;
+            font-family: 'Josefin Sans';
+          }
+        }
+      }
+    }
+
     footer {
       p {
         margin: 0;
       }
       .footer-wrapper {
-        margin-bottom: -10em;
-        padding-top: 10em;
         font-size: 0.8em;
         line-height: 2em;
         text-align: center;
-        font-family: 'Arbutus Slab';
+        font-family: 'Josefin Sans';
         .run {
           padding: 4px 5px;
           border-radius: 1px;
@@ -124,6 +156,8 @@ h1 {
         .social {
           margin-top: 2em;
           font-size: 1em;
+          display: flex;
+          justify-content: center;
 
           a {
             text-decoration: none;
