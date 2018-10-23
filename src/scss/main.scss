@@ -96,34 +96,42 @@ h1 {
     }
 
     main {
-      .webpack-on {
-        display: flex;
-        height: 10em;
-        justify-content: center;
-        align-items: center;
-
-        .webpack-item {
+      .webpack-wrapper {
+        padding: 5em 0em;
+        .webpack-title {
           text-align: center;
-          padding: 4px 5px;
-          border-radius: 2px;
-          margin: 5px;
+          font-family: 'Josefin Sans';
+          font-size: 2vmin;
+        }
+  
+        .webpack-on {
+          display: flex;
+          justify-content: center;
+          align-items: center;
           
-          &:before {
-            content: '';
-            border-left: 1px solid $color4;
-            width: 2px;
-            display: block;
-          }
-
-          i {
-            font-size: 0.6em;
-            color: $color2;
-          }
-          p {
-            margin: 0;
-            padding: 0;
-            font-size: 1.6vmin;
-            font-family: 'Josefin Sans';
+          .webpack-item {
+            text-align: center;
+            padding: 4px 5px;
+            border-radius: 2px;
+            margin: 5px;
+            
+            &:before {
+              content: '';
+              border-left: 1px solid $color4;
+              width: 2px;
+              display: block;
+            }
+  
+            i {
+              font-size: 0.6em;
+              color: $color2;
+            }
+            p {
+              margin: 0;
+              padding: 0;
+              font-size: 1.6vmin;
+              font-family: 'Josefin Sans';
+            }
           }
         }
       }
