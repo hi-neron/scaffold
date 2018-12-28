@@ -2,9 +2,10 @@ const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
+const DIR = path.resolve(__dirname, "src/app.js")
 
 module.exports = {
-  entry: { main: path.resolve(__dirname, "src/app.js") }, // string | object | array
+  entry: { main:  DIR}, // string | object | array
   // Here the application starts executing
   // and webpack starts bundling
   output: {
@@ -14,8 +15,9 @@ module.exports = {
   module: {
     rules : [
       {
-        test: /\.js$/,
+        test: /\.(js|jsx)$/,
         exclude: /node_modules/,
+        include: DIR,
         use: {
           loader: "babel-loader"
         }
